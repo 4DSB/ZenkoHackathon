@@ -1,2 +1,0 @@
-# ZenkoHackathon
-Zenko Hackathon
