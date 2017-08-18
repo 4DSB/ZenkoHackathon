@@ -247,3 +247,7 @@ python storage_utilization/pullData.py
 ```
 
 * The output is the total utilization of the bucket in bytes.
+
+### Special Thanks
+
+[puikinsh's Gentelella Admin](https://github.com/puikinsh/gentelella)
