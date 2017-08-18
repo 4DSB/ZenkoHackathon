@@ -1,0 +1,930 @@
+
+<!--
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "./App.css" />
+<div id="nav"></div>
+<div id="app"></div>
+<script src="./bundle.js"></script>
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>UTAPI UI | DEMO</title>
+
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+
+    <link href="build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+
+
+
+<!-- Sidebar Menu -->
+<!-- ======================================================================= -->
+<div class="col-md-3 left_col">
+  <div class="left_col scroll-view">
+
+<!-- LOGO -->
+<!-- ======================================================================= -->
+<div class="navbar nav_title" style="border: 0;">
+    <a href="index.html" class="site_title" style="text-align: center;">
+      <img src="build/images/logo-white.svg"
+      style="height: 50px; width: auto;" alt="logo" />
+    </a>
+</div>
+<div class="clearfix"></div>
+<br />
+
+<!-- SIDEBAR -->
+<!-- ======================================================================= -->
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+  <div class="menu_section">
+    <h3>About</h3>
+    <ul class="nav side-menu">
+
+      <li><a href="https://scality.com"><i class="fa fa-globe"></i> Scality Website </a></li>
+      <li><a href="https://github.com/scality/utapi"><i class="fa fa-github"></i> UTAPI on Github </a></li>
+      <li><a href="https://github.com/scality/zenko"><i class="fa fa-github"></i> Zenko on Github </a></li>
+
+    </ul>
+	<!--<h3>Settings</h3>-->
+	<br>
+    <ul class="nav side-menu">
+
+      <li><a href="#"><i class="fa fa-gear"></i> Settings </a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- Menu footer buttons-->
+<!-- ======================================================================= -->
+<div class="sidebar-footer hidden-small">
+  <a data-toggle="tooltip" data-placement="top" title="Logout" href="index.html" style="width:100%;">
+    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+  </a>
+</div>
+
+
+  </div>
+</div>
+
+<!-- Top navigation -->
+<!-- ======================================================== -->
+
+<div class="top_nav">
+  <div class="nav_menu">
+    <nav>
+      <div class="nav toggle" style="padding-bottom:10px;">
+        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+      </div>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+
+<!-- page content -->
+<div class="right_col" role="main">
+<div class="row">
+
+<!-- Time graph-->
+<!-- =======================================================================
+
+
+  <div class="col-md-12 col-sm-12 col-xs-12">
+  <div class="dashboard_graph">
+    <div class="row x_title">
+      <div class="col-md-6">
+        <h3>Daily Activities <small>Each 15 minutes</small></h3>
+      </div>
+    </div>
+
+    <div class="col-md-9 col-sm-9 col-xs-12">
+      <div id="chart_plot_01" class="demo-placeholder"></div>
+    </div>
+
+    <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+
+      <div class="col-md-12 col-sm-12 col-xs-6">
+
+          <div class="leer">
+            <p>Bucket 1</p>
+            <div class="progress progress_sm" style="width: 76%;">
+              <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+  </div>
+
+
+</div>
+<br />
+<div class="row">
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Buckets something-->
+<!-- ======================================================== -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+  <div class="x_panel tile fixed_height_320">
+    <div class="x_title">
+      <h2>Storage Utilized</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings 1</a>
+            </li>
+            <li><a href="#">Settings 2</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="close-link"><i class="fa fa-close"></i></a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <h4>Number of bytes / Time range</h4>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div id="store1" class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>66K</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>85K</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:45pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>23k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 62%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>62K</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 27%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>27K</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Buckets something-->
+<!-- ======================================================== -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+  <div class="x_panel tile fixed_height_320">
+    <div class="x_title">
+      <h2>Number of Objects</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings 1</a>
+            </li>
+            <li><a href="#">Settings 2</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="close-link"><i class="fa fa-close"></i></a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <h4>Number of objects / Time range</h4>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 47%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>12</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>5</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:45pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>23</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 7%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>3</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>10</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Buckets something-->
+<!-- ======================================================== -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+  <div class="x_panel tile fixed_height_320">
+    <div class="x_title">
+      <h2>Incoming Bytes</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings 1</a>
+            </li>
+            <li><a href="#">Settings 2</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="close-link"><i class="fa fa-close"></i></a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <h4>Number of bytes / Time range</h4>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 76%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>76K</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 38%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>38k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:45pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 22%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>22k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 44%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>44k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>10k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Buckets something-->
+<!-- ======================================================== -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+  <div class="x_panel tile fixed_height_320">
+    <div class="x_title">
+      <h2>Outgoing Bytes</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings 1</a>
+            </li>
+            <li><a href="#">Settings 2</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="close-link"><i class="fa fa-close"></i></a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <h4>Number of bytes / Time range</h4>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>2k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>15k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>12:45pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 53%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>53k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:00pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>3k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="widget_summary">
+        <div class="w_left w_25">
+          <span>1:15pm</span>
+        </div>
+        <div class="w_center w_55">
+          <div class="progress">
+            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 31%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="w_right w_20">
+          <span>31k</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Buckets something-->
+<!-- ======================================================== -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+  <div class="x_panel tile fixed_height_320">
+    <div class="x_title">
+      <h2>Operations</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings 1</a>
+            </li>
+            <li><a href="#">Settings 2</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="close-link"><i class="fa fa-close"></i></a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+
+
+
+
+    <div class="x_content" style="text-align:center;">
+
+
+	  	<button style="width:300px;" title="18th Aug, 2017. 3:23pm" type="button" name="button">
+			Create Bucket : 1
+		</button>
+
+	  <br style="margin-bottom: 30px;">
+
+	  	<button style="width:300px;" title="18th Aug, 2017. 3:23pm" type="button" name="button">
+			Put Bucket : 1
+		</button>
+
+
+
+<!--
+
+Create Bucket
+Put Bucket
+
+-->
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Storage usage-->
+<!-- ========================================================
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="x_panel tile fixed_height_320 overflow_hidden">
+    <div class="x_title">
+      <h2>Device Storage</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings 1</a>
+            </li>
+            <li><a href="#">Settings 2</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="close-link"><i class="fa fa-close"></i></a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <table class="" style="width:100%">
+        <tr>
+          <th style="width:37%;">
+            <p>Disk</p>
+          </th>
+          <th>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+              <p class="">Device</p>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+              <p class="">Progress</p>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+          </td>
+          <td>
+            <table class="tile_info">
+              <tr>
+                <td>
+                  <p><i class="fa fa-square blue"></i>Used </p>
+                </td>
+                <td>35%</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><i class="fa fa-square green"></i>Available </p>
+                </td>
+                <td>10%</td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+-->
+
+
+
+<!-- SSpeede-->
+<!-- ========================================================
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+  <div class="x_panel tile fixed_height_320">
+    <div class="x_title">
+      <h2>Upload/ Download</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings 1</a>
+            </li>
+            <li><a href="#">Settings 2</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="close-link"><i class="fa fa-close"></i></a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="dashboard-widget-content">
+        <div class="sidebar-widget" style="width:100%; height:200px;" >
+            <h4>Transfer Speed</h4>
+            <canvas width="150" height="80" id="chart_gauge_01" class=""></canvas>
+            <div class="goal-wrapper">
+              <span id="gauge-text" class="gauge-value pull-left">0</span>
+              <span class="gauge-value pull-left">%</span>
+              <span id="goal-text" class="goal-value pull-right">100%</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+-->
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<!-- /page content -->
+
+
+
+<!-- footer content -->
+<!-- ======================================================== -->
+<footer>
+  <div class="pull-right">
+    UTAPI FOOTER
+  </div>
+  <div class="clearfix"></div>
+</footer>
+
+
+    </div>
+    </div>
+
+
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <script src="vendors/gauge.js/dist/gauge.min.js"></script>
+
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <script src="vendors/skycons/skycons.js"></script>
+    <script src="vendors/Flot/jquery.flot.js"></script>
+    <script src="vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="vendors/Flot/jquery.flot.time.js"></script>
+    <script src="vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+
+    <script src="vendors/DateJS/build/date.js"></script>
+    <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="vendors/moment/min/moment.min.js"></script>
+
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+
+    <script src="build/js/custom.min.js"></script>
+
+
+  </body>
+</html>
