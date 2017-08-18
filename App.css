@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.sectionStyle {
+	margin: '0px 10px 0px 10px';
+}
+
+.homeText {
+    margin: '15px'
+}
+
+.App {
+  text-align: center;
+}
+
+.coin-icon {
+  animation: coin-spin infinite 3s linear;
+  height: 50px;
+  width: 50px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes coin-spin {
+  0% { transform: scaleX(50px); }
+  50% { transform: scaleX(0); }
+  100% { transform: scaleX(50px); }
+}
